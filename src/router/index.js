@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
 import Dashboard from '@/components/Dashboard';
+import Counter from '@/components/Counter';
 
 Vue.use(Router);
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/courses',
       name: 'Dashboard',
       component: Dashboard,
+    },
+    {
+      path: '/counter',
+      name: 'Counter',
+      component: Counter,
     },
   ],
 });
